@@ -32,7 +32,7 @@ a{color:inherit}
 .hero .wrap{display:grid;gap:2.25rem}
 .kicker{font-weight:600;font-size:.95rem;color:#B9C8D5;margin-bottom:.75rem}
 h1{font-family:var(--display);font-weight:900;font-size:clamp(3rem,13vw,6.6rem);line-height:.9;letter-spacing:-.005em;text-wrap:balance}
-.lede{margin-top:1.1rem;font-size:1.1rem;max-width:34rem;color:#DCE6EE}
+.lede{margin-top:1.75rem;font-size:1.1rem;max-width:34rem;color:#DCE6EE}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.25rem;margin-top:1.6rem;max-width:32rem}
 .facts dt{font-size:.85rem;color:#B9C8D5}
 .facts dd{font-family:var(--display);font-weight:800;font-size:1.55rem;line-height:1.1;color:var(--yellow)}
@@ -82,7 +82,9 @@ h2.sec{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3rem)
 .warn{margin-top:1rem;display:flex;gap:.75rem;align-items:flex-start;background:#FDECEA;border:2px solid var(--red);border-radius:12px;padding:.8rem .9rem;color:#6E130C}
 .warn i{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--red);color:#fff;font-style:normal;font-weight:800;display:grid;place-items:center}
 .warn strong{display:block;color:var(--red);font-size:1.05rem}
-.prices{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:.3rem}
+.prices{display:grid;grid-template-columns:.8fr 1.2fr;gap:1rem;padding-top:.3rem;align-items:end}
+.prices>div:first-child .price{font-size:clamp(1.9rem,6.5vw,2.4rem);color:var(--muted)}
+.ticket.picked .prices>div:first-child .price{color:var(--ink)}
 .price{font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,9vw,3.4rem);line-height:1}
 .plabel{font-size:.88rem;color:var(--muted);font-weight:500}
 .ticket.picked .plabel{color:var(--ink)}
@@ -97,7 +99,7 @@ h2.sec{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3rem)
 .note:nth-child(3){border-color:var(--ink)}
 .note h3{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1.1;margin-bottom:.4rem}
 .note p+p{margin-top:.5rem}
-.quick{margin-top:2rem;display:grid;gap:.6rem;max-width:44rem}
+.quick{margin-top:2rem;padding:0;display:grid;gap:.6rem;max-width:44rem}
 .quick li{list-style:none;padding-left:1.3rem;position:relative}
 .quick li::before{content:"";position:absolute;left:0;top:.6em;width:.6rem;height:.6rem;background:var(--yellow);border:2px solid var(--ink);border-radius:50%}
 footer{padding:3rem 0 3rem;color:var(--muted);font-size:.92rem}
@@ -278,7 +280,7 @@ footer{padding:3rem 0 3rem;color:var(--muted);font-size:.92rem}
       <li>Lowest fare is Zipjet at $428 for two, before bags.</li>
       <li>Lakeshore is the only option with a stop, and the only one that leaves on Wed Nov 11.</li>
       <li>Three of the four fly home Mon Nov 16. Zipjet flies home Sun Nov 15.</li>
-      <li>The two SkyBridge flights are $972 and $1,058 for two, depending on whether we leave Thursday or Friday.</li>
+
     </ul>
   </div>
 </section>
